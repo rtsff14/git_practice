@@ -1,3 +1,4 @@
 select jlc.*
 from csn_junk.dbo.tblJuly14LisCogs jlc (nolock)
+left join csn_junk.dbo.tblJulyLisWins jlw (nolock) on jlc.ManufacturerPartID = jlw.ManufacturerPartId
 where jlc.NegotiationCycle = 'September'
