@@ -1,4 +1,4 @@
-select jlc.*
+select jlc.*, jlw.KeyedCost
 from csn_junk.dbo.tblJuly14LisCogs jlc (nolock)
 left join csn_junk.dbo.tblJulyLisWins jlw (nolock) on jlc.ManufacturerPartID = jlw.ManufacturerPartId
 where jlc.NegotiationCycle = 'September'
