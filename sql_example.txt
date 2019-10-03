@@ -1,3 +1,3 @@
 select jlc.*
-from csn_junk.dbo.tblJuly14LisCogs jlc
+from csn_junk.dbo.tblJuly14LisCogs jlc (nolock)
 where jlc.NegotiationCycle = 'September'
